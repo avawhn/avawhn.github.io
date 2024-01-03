@@ -1,0 +1,89 @@
+<mxfile host="Electron" modified="2024-01-03T07:36:58.202Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="B59-mOFBEitmwXMc4iMN" version="22.1.16" type="device">
+  <diagram name="第 1 页" id="u68QEFPPuJOQOn4WzC19">
+    <mxGraphModel dx="1711" dy="1185" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qvWrMmw9giqxRyLl10g4-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qvWrMmw9giqxRyLl10g4-28" target="qvWrMmw9giqxRyLl10g4-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-28" value="&lt;h1&gt;构建 Advisor&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=top;align=right;verticalAlign=bottom;" vertex="1" parent="1">
+          <mxGeometry x="200" y="620" width="480" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qvWrMmw9giqxRyLl10g4-1" target="qvWrMmw9giqxRyLl10g4-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-5" value="@Import引入" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qvWrMmw9giqxRyLl10g4-4">
+          <mxGeometry x="-0.25" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-1" value="EnableAsync" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qvWrMmw9giqxRyLl10g4-3" target="qvWrMmw9giqxRyLl10g4-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-3" value="AsyncConfigurationSelector" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="290" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qvWrMmw9giqxRyLl10g4-6" target="qvWrMmw9giqxRyLl10g4-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-6" value="&lt;font color=&quot;#ff3399&quot;&gt;父类的selectImports&lt;/font&gt;&lt;br&gt;获取EnableAsync数据并&lt;br&gt;调用&lt;font color=&quot;#ff3399&quot;&gt;子类的selectImports&lt;/font&gt;&lt;br&gt;默认引入&lt;br&gt;ProxyAsyncConfiguration" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="312.5" y="400" width="255" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qvWrMmw9giqxRyLl10g4-9" target="qvWrMmw9giqxRyLl10g4-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-9" value="ProxyAsyncConfiguration&lt;br&gt;创建并初始化&lt;br&gt;AsyncAnnotationBeanPostProcessor" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="520" width="220" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qvWrMmw9giqxRyLl10g4-11" target="qvWrMmw9giqxRyLl10g4-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qvWrMmw9giqxRyLl10g4-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="555" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-11" value="AsyncAnnotationBeanPostProcessor&lt;br&gt;中的&lt;br&gt;setBeanFactory&lt;br&gt;创建了&lt;br&gt;&lt;font color=&quot;#ff3399&quot;&gt;advisor&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="640" width="265" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qvWrMmw9giqxRyLl10g4-12" target="qvWrMmw9giqxRyLl10g4-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-12" value="AsyncAnnotationBeanPostProcessor&lt;br&gt;父类的父类&lt;br&gt;AbstractAdvisingBeanPostProcessor&lt;br&gt;实现了&lt;br&gt;BeanPostProcessor" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="295" y="1100" width="290" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qvWrMmw9giqxRyLl10g4-15" target="qvWrMmw9giqxRyLl10g4-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-15" value="advisor&lt;br&gt;buildAdvice&lt;br&gt;构建了通知" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="275" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qvWrMmw9giqxRyLl10g4-17" target="qvWrMmw9giqxRyLl10g4-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-17" value="buildAdvice&lt;br&gt;中创建了&lt;br&gt;&lt;font color=&quot;#ff3399&quot;&gt;AnnotationAsyncExecutionInterceptor&lt;/font&gt;&lt;br&gt;方法拦截器" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="890" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-19" value="invoke方法将要执行的方法包装成了task并提交到了 executor" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="980" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qvWrMmw9giqxRyLl10g4-23" target="qvWrMmw9giqxRyLl10g4-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-23" value="advisor&lt;br&gt;buildPointcut&lt;br&gt;构造切点" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="497.5" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-24" value="根据Async和自定义的异步注解构造clas与method的切点" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="468.75" y="890" width="177.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qvWrMmw9giqxRyLl10g4-26" value="AbstractAdvisingBeanPostProcessor&lt;br&gt;中&lt;br&gt;postProcessAfterInitialization&lt;br&gt;&lt;font color=&quot;#3333ff&quot;&gt;根据 advisor创建代理类&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="337.5" y="1230" width="205" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
