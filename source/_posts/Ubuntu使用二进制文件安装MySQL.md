@@ -262,7 +262,15 @@ whn@study:~$ systemctl status mysqld.service
              └─22906 /usr/local/mysql/bin/mysqld --defaults-file=/etc/my.cnf
 ```
 
-使用`mysqlshow`进行测试，密码为初始化目录时生成的随机密码，这里是`,oQ!fmS2t(ri`
+
+
+重置root用户的密码
+
+```sql
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
+```
+
+使用`mysqlshow`进行测试
 
 ```shell
 whn@study:~$ mysqlshow -u root -p
@@ -275,12 +283,6 @@ Enter password:
 | performance_schema |
 | sys                |
 +--------------------+
-```
-
-重置root用户的密码
-
-```sql
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
 ```
 
 # 3. support-files/mysql.server脚本文件
