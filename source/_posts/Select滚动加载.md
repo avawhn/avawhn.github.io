@@ -57,13 +57,10 @@ export default {
   methods: {
     handleVisibleChange(visible) {
       if (visible) {
-        this.$nextTick(() => {
-          const dom = document.querySelector(
+        const dom = document.querySelector(
             ".el-select-dropdown .el-select-dropdown__wrap"
           );
-          console.log(dom);
           dom.addEventListener("scroll", this.handleScroll);
-        });
       } else {
         const dom = document.querySelector(
           ".el-select-dropdown .el-select-dropdown__wrap"
