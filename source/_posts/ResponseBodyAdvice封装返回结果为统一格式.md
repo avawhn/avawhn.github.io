@@ -15,7 +15,7 @@ date: 2025-06-04 23:41:55
 
 注意：返回类型为`String`时要特殊处理，这时候的`MediaType`是`text/plain`，并不是`application/json`，使用的是`StringHttpMessageConverter`，为了避免不必要的序列化/反序列化过程，这个转换器在写入响应时直接操作`HttpServletResponse`的`Writer`，而不是像其他类型那样使用`MappingJackson2HttpMessageConverter`等
 
-出错的根本原因是先确定的具体`HttpMessageConverter`，然后在调用的`advice`，导致返回类型发生变化，一开始确定的`HttpMessageConverter`无法正常运行，下面是部分源码，位于：`AbstractMessageConverterMethodProcessor.writeWithMessageConverters`， 后续调用了`addDefaultHeaders`，向一个`String`类型的参数传入了`Object`也就是`R`，类型报错，
+出错的根本原因是调用`HttpMessageConverter.canWrite`确定了具体的`Converter`，然后在调用的`advice`，而`advice`中对类型进行了转换，导致返回类型发生变化，一开始确定的`Converter`无法正常运行，下面是部分源码，位于：`AbstractMessageConverterMethodProcessor.writeWithMessageConverters`， 后续调用了`addDefaultHeaders`，向一个`String`类型的参数传入了`Object`也就是`R`，类型报错，
 
 
 ```java
