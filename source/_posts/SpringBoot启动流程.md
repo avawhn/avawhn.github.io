@@ -1,7 +1,11 @@
 ---
 title: SpringBoot启动流程
-tags: [Java, SpringBoot]
+tags:
+  - Java
+  - SpringBoot
+date: 2025-06-26 22:04:53
 ---
+
 
 - [1. SpringBoot的Main方法](#1-springboot的main方法)
 - [2. SpringApplication.run](#2-springapplicationrun)
